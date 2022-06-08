@@ -1,0 +1,116 @@
+
+body{
+    font-family: 'Roboto', sans-serif;
+    width: 414px;
+    background-color: #E5E5E5;
+    margin: 0 auto 0 auto;
+}
+
+h1{
+    font-family: 'Righteous', cursive;
+}
+
+.topo{
+    height: 92px;
+    width: 100%;
+    background-color:#CF2B2B;
+}
+
+.topo :nth-child(1){
+    font-size: 44px;
+    font-weight: 400;
+    padding-top: 8px;
+    margin-bottom: 5px;
+    margin-left: 21px;
+    color: #FFFFFF;
+}
+
+.topo :nth-child(2){
+    font-size: 18px;
+    margin-left: 21px;
+    color: #FFFFFF;
+}
+
+.opcoes{
+    margin-left: 19px;
+    margin-top: 31px;
+    font-size: 26px;
+    font-weight: 400;
+    display: flex;
+    flex-direction: column;
+}
+
+.pratos{
+    display: flex;
+    overflow: hidden; 
+}
+
+.pratos div{
+    margin-top: 17px;
+    margin-right: 17px;
+    width: 172px;
+    height: 216px;
+    background-color: #FFFFFF;
+    box-shadow: 0px 0px 10px -4px rgba(0, 0, 0, 0.25);
+    border-radius: 9px;
+    flex-shrink: 0;
+}
+
+.comida{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.comida :nth-child(1){
+    width: 144px;
+    height: 87px;
+    border-radius: 4px;
+    align-self: center;
+}
+
+.comida :nth-child(2){
+    margin-left: 18px;
+    font-size: 16px;
+    font-weight: 700;
+}
+
+.comida :nth-child(3){
+    font-size: 15px;
+    font-weight: 300;
+    color: #A6A6A6;
+    margin-left: 18px;
+
+}
+
+.comida :nth-child(4){
+    font-size: 16px;
+    font-weight: 400;
+    margin-left: 18px;
+}
+
+.final{
+    height: 92px;
+    background-color: #FFFFFF;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 16px;
+}
+
+.button{
+    background-color: #CBCBCB;
+    width: 364px;
+    height: 61px;
+    border-radius: 50px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.button p {
+    font-size: 20px;
+    font-weight: 400;
+    color: #FFFFFF;
+}
