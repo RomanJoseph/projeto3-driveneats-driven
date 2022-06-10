@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,104 +9,117 @@
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Righteous&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;1,100;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Righteous&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;1,100;1,300;1,400;1,500;1,700&display=swap"
+        rel="stylesheet">
     <title>DrivenEats</title>
 </head>
+
 <body>
     <div class="topo">
         <h1>DrivenEats</h1>
         <p>Sua comida em 6 minutos</p>
     </div>
 
-    <div class="opcoes">
-        <h1>Primeiro, seu prato</h1>
-        <div class="pratos">
-            
-            <div class="comida">
-                <img src="images/salmao.jpg">
-                <p>Salmão</p>
-                <p>Um pouco de frango, um pouco de salada</p>
-                <p>R$ 14,90</p>
+    <main>
+
+        <div class="opcoes">
+            <h1>Primeiro, seu prato</h1>
+            <div class="pratos">
+
+                <div class="comida quadro" onclick="marcar(this,'comida')">
+                    <img src="images/salmao.jpg">
+                    <p>Salmão</p>
+                    <p>Um pouco de frango, um pouco de salada</p>
+                    <p>R$ 14,90</p>
+                </div>
+
+                <div class="comida quadro" onclick="marcar(this,'comida')">
+                    <img src="images/salmao.jpg">
+                    <p>Salmão</p>
+                    <p>Um pouco de frango, um pouco de salada</p>
+                    <p>R$ 14,90</p>
+                </div>
+
+
+                <div class="comida quadro" onclick="marcar(this,'comida')">
+                    <img src="images/salmao.jpg">
+                    <p>Salmão</p>
+                    <p>Um pouco de frango, um pouco de salada</p>
+                    <p>R$ 14,90</p>
+                </div>
             </div>
-
-            <div class="comida">
-                <img src="images/salmao.jpg">
-                <p>Salmão</p>
-                <p>Um pouco de frango, um pouco de salada</p>
-                <p>R$ 14,90</p>
-            </div>
-
-
-            <div class="comida">
-                <img src="images/salmao.jpg">
-                <p>Salmão</p>
-                <p>Um pouco de frango, um pouco de salada</p>
-                <p>R$ 14,90</p>
-            </div>    
         </div>
-    </div>
 
-    <div class="opcoes">
-        <h1>Agora, sua bebida</h1>
-        <div class="pratos">
-            
-            <div class="comida">
-                <img src="images/coquinha.jpg">
-                <p>Coquinha Gelada</p>
-                <p>Lata 350ml</p>
-                <p>R$ 4,90</p>
+        <div class="opcoes">
+            <h1>Agora, sua bebida</h1>
+            <div class="pratos">
+
+                <div class="bebida quadro" onclick="marcar(this,'bebida')">
+                    <img src="images/coquinha.jpg">
+                    <p>Coquinha Gelada</p>
+                    <p>Lata 350ml</p>
+                    <p>R$ 4,90</p>
+                </div>
+
+                <div class="bebida quadro" onclick="marcar(this,'bebida')">
+                    <img src="images/coquinha.jpg">
+                    <p>Coquinha Gelada</p>
+                    <p>Lata 350ml</p>
+                    <p>R$ 4,90</p>
+                </div>
+
+
+                <div class="bebida quadro" onclick="marcar(this,'bebida')">
+                    <img src="images/coquinha.jpg">
+                    <p>Coquinha Gelada</p>
+                    <p>Lata 350ml</p>
+                    <p>R$ 4,90</p>
+                </div>
             </div>
-
-            <div class="comida">
-                <img src="images/coquinha.jpg">
-                <p>Coquinha Gelada</p>
-                <p>Lata 350ml</p>
-                <p>R$ 4,90</p>
-            </div>
-
-
-            <div class="comida">
-                <img src="images/coquinha.jpg">
-                <p>Coquinha Gelada</p>
-                <p>Lata 350ml</p>
-                <p>R$ 4,90</p>
-            </div>    
         </div>
-    </div>
 
-    <div class="opcoes">
-        <h1>Por fim, sua sobremesa</h1>
-        <div class="pratos">
-            
-            <div class="comida">
-                <img src="images/sorvete.jpg">
-                <p>Sorvete</p>
-                <p>Apenas sorvete</p>
-                <p>R$ 7,90</p>
+        <div class="opcoes" id="sobremesa">
+            <h1>Por fim, sua sobremesa</h1>
+            <div class="pratos">
+
+                <div class="doce quadro" onclick="marcar(this,'doce')">
+                    <img src="images/sorvete.jpg">
+                    <p>Sorvete</p>
+                    <p>Apenas sorvete</p>
+                    <p>R$ 7,90</p>
+                </div>
+
+                <div class="doce quadro" onclick="marcar(this,'doce')">
+                    <img src="images/sorvete.jpg">
+                    <p>Sorvete</p>
+                    <p>Apenas sorvete</p>
+                    <p>R$ 7,90</p>
+                </div>
+
+
+                <div class="doce quadro" onclick="marcar(this,'doce')">
+                    <img src="images/sorvete.jpg">
+                    <p>Sorvete</p>
+                    <p>Apenas sorvete</p>
+                    <p>R$ 7,90</p>
+                </div>
             </div>
-
-            <div class="comida">
-                <img src="images/sorvete.jpg">
-                <p>Sorvete</p>
-                <p>Apenas sorvete</p>
-                <p>R$ 7,90</p>
-            </div>
-
-
-            <div class="comida">
-                <img src="images/sorvete.jpg">
-                <p>Sorvete</p>
-                <p>Apenas sorvete</p>
-                <p>R$ 7,90</p>
-            </div>    
         </div>
-    </div>
+
+    </main>
 
     <div class="final">
-        <div class="button">
-            <p id="texto">Selecione os 3 itens <br> para fechar o pedido</p>
-        </div>
+        <button class="button-nao-pode-comprar">
+            <p>Selecione os 3 itens <br> para fechar o pedido</p>
+        </button>
+        <button class="button-pode-comprar">
+            <p>Fechar pedido</p>
+        </button>
     </div>
 
 </body>
+
+<script src="script.js"></script>
+
 </html>

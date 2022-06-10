@@ -1,19 +1,24 @@
-
 body{
     font-family: 'Roboto', sans-serif;
     width: 414px;
     background-color: #E5E5E5;
-    margin: 0 auto 0 auto;
 }
 
 h1{
     font-family: 'Righteous', cursive;
 }
 
+main{
+    margin-top: 123px;
+}
+
 .topo{
     height: 92px;
-    width: 100%;
+    width: 414px;
     background-color:#CF2B2B;
+    position: fixed;
+    top: 0;
+    left: 0;
 }
 
 .topo :nth-child(1){
@@ -42,10 +47,10 @@ h1{
 
 .pratos{
     display: flex;
-    overflow: hidden; 
+    overflow-x: scroll; 
 }
 
-.pratos div{
+.quadro{
     margin-top: 17px;
     margin-right: 17px;
     width: 172px;
@@ -56,26 +61,26 @@ h1{
     flex-shrink: 0;
 }
 
-.comida{
+.comida,.bebida,.doce{
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
 }
 
-.comida :nth-child(1){
+.comida :nth-child(1),.bebida :nth-child(1),.doce :nth-child(1){
     width: 144px;
     height: 87px;
     border-radius: 4px;
     align-self: center;
 }
 
-.comida :nth-child(2){
+.comida :nth-child(2),.bebida :nth-child(2),.doce :nth-child(2){
     margin-left: 18px;
     font-size: 16px;
     font-weight: 700;
 }
 
-.comida :nth-child(3){
+.comida :nth-child(3),.bebida :nth-child(3),.doce :nth-child(3){
     font-size: 15px;
     font-weight: 300;
     color: #A6A6A6;
@@ -83,7 +88,7 @@ h1{
 
 }
 
-.comida :nth-child(4){
+.comida :nth-child(4),.bebida :nth-child(4),.doce :nth-child(4){
     font-size: 16px;
     font-weight: 400;
     margin-left: 18px;
@@ -96,9 +101,13 @@ h1{
     align-items: center;
     justify-content: center;
     margin-top: 16px;
+    position: fixed;
+    width: 414px;
+    bottom: 0;
+    left: 0;
 }
 
-.button{
+.button-nao-pode-comprar{
     background-color: #CBCBCB;
     width: 364px;
     height: 61px;
@@ -107,10 +116,39 @@ h1{
     display: flex;
     align-items: center;
     justify-content: center;
+    border: none;
 }
 
-.button p {
+.button-nao-pode-comprar p {
     font-size: 20px;
     font-weight: 400;
     color: #FFFFFF;
+}
+
+.button-pode-comprar{
+    background-color: #CBCBCB;
+    width: 364px;
+    height: 61px;
+    border-radius: 50px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    background-color:#32B72F;
+    display: none;
+}
+
+.button-pode-comprar p{
+    font-size: 20px;
+    font-weight: 700;
+    color: #FFFFFF;
+}
+
+#sobremesa{
+    margin-bottom: 108px;
+}
+
+.selecionado{
+    box-shadow: 0px 0px 10px -4px rgba(0, 0, 0, 0.25), inset 0px 0px 0px 5px #32B72F;
 }
