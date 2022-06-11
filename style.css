@@ -12,6 +12,14 @@ main{
     margin-top: 123px;
 }
 
+.check {
+    align-self: flex-end;
+    margin-right: 12px;
+    color: #32B72F;
+    margin-bottom: 3px;
+    visibility: hidden;
+}
+
 .topo{
     height: 92px;
     width: 414px;
@@ -151,4 +159,8 @@ main{
 
 .selecionado{
     box-shadow: 0px 0px 10px -4px rgba(0, 0, 0, 0.25), inset 0px 0px 0px 5px #32B72F;
+}
+
+.selecionado .check{
+    visibility: visible;
 }
